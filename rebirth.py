@@ -1,11 +1,14 @@
-
 import random
 import math
+
+########################################################################
+######################### REBIRTH BASIC ################################
+#########################    SECTION    ################################
+########################################################################
+
 #### Vector: coordinates from points xA, yA, xB, Yb | DET
 
-
 def vector_x(xa, xb):
-
     Pa = xb - xa
     return Pa 
 
@@ -13,9 +16,7 @@ def vector_y(ya, yb):
     Pb = yb - ya
     return Pb
 
-
 def vector_det(x, y, x1, y1):
-
     det = (x * y1) - (y * x1)
     return det
 
@@ -39,13 +40,10 @@ def rand(min1, max1):
 #### Number guesser
 ## Need rebirth.rand(min1, max1) (see example)
 
-
-def guess(rand):
-    
+def guess(rand):    
     guess = float(input("Rebirth| Guess > "))
     if guess == rand:
         print("Rebirth| You found the correct number.")
-        
     elif guess < rand:
         print("Rebirth| Higher!")
     elif guess > rand:
@@ -80,7 +78,8 @@ def pi_gen(value, times):
 #### All informations about the Python Module
 
 def info():
-    print("Rebirth | Python Module")
+    print("Rebirth Complementary | Python Module")
+    print("Rebirth Complementary is Rebirth basic but with more features.\n")
     print("- A simple python module using simple functions")
     print("- Useful for some things like vector calculations")
     print("- Less useful but still good like pi_gen")
@@ -109,7 +108,6 @@ def password(len):
 # length = int(input("Password length: "))
 # print("Your new password is", rebirth.password(length))
 
-
 #### Ping
 def ping():
     print("Pong(1)")
@@ -128,14 +126,12 @@ def odd_even(number, messageEven, functionEven, messageOdd, functionOdd):
 ### None
 
 def none():
-    
     len("None")
 
 ### Example
 # rebirth.none()
 # Use example
 # rebirth.odd_even(2, "Even", rebirth.none, "odd", rebirth.none) to call no function
-
 
 # Example
 # rebirth.odd_even(2, "Even", "Odd")
@@ -145,7 +141,6 @@ def none():
 # = 
 ## OTHER EXAMPLE
 # rebirth.odd_even(rebirth.rand(1,20), "Even", "Odd")
-
 
 #### For... loop
 
@@ -164,7 +159,6 @@ def loop(value, times, function):
 #### Infinity Loop (Checker Loop)
 
 def loopinf(value, function):
-    
     for o in range(1, value):
         for p in range(1, value):
             function()
@@ -178,21 +172,16 @@ def loopinf(value, function):
 # will repeat the hi() function infinity as long you don't change value by 0
 # rebirth.loopinf(0, hi)
 # the loop on the hi() function will end.
-        
-    
-        
+
 ########################################################################
 ######################### REBIRTH COMPLEMENTARY ########################
-######################### ZEYATSU C             ########################
-######################### SECTION               ########################
+#########################      ZEYATSU C        ########################
+#########################      SECTION          ########################
 ########################################################################
-
-
 
 #### Square & Cube Function
 
 def function_sqr(n):
-
     a = n**2
     print(a)
     if n < 0:
@@ -201,13 +190,11 @@ def function_sqr(n):
         maxi = n * 2 + 1 
 
     for w in range(1, maxi):
-       
         n += 1
         a = n**2
         print(a)
 
 def function_cube(n):
-
     a = n**3
     print(a)
     if n < 0:
@@ -216,7 +203,6 @@ def function_cube(n):
         maxi = n * 2 + 1 
 
     for z in range(1, maxi):
-       
         n += 1
         a = n**3
         print(a)
@@ -238,7 +224,6 @@ def callfunction(function):
 #   print("hi")
 # rebirth.callfunction(hi)
 # = hi
-
 
 ### Print message
 
